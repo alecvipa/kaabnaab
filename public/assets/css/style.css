@@ -1,0 +1,239 @@
+
+.capitalBanner{
+    height: 50rem;
+    background-image: url("/assets/images/waves.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%; */
+
+}
+.bannerContacto{
+    height: 20rem;
+    background-image: url("/assets/images/company.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titleContactoBannerOverlay{
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+}
+.overlayInicio{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+.serviciosTitleInicio{
+    margin-top: 20%;
+    padding: 3%;
+    color: white;
+}
+.privacidadBanner{
+    height: 40rem;
+    background-image: url("/assets/images/privacidadImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.fonts{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.kaabNaabTitleNosotros{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+
+.navbar-toggler {
+    background-color: #F4C311 !important;
+} 
+.logoCapitalNavBar{
+    height: 9rem;
+}
+.nav-link{
+    color: black !important;
+    
+}
+.nav-link:hover{
+    color: #D45C6C !important;
+}
+
+
+.btn-whats{
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+.titleValueProp{
+    width: 57%;
+    text-align: center;
+    margin-left: 24%;
+}
+.backgroundValueP{
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 8px;
+    padding: 3%;
+}
+.aplicacionesDiv{
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    background-image: url("/assets/images/salon.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%;
+}
+.cardAplicacionesLash{
+    margin-bottom: 5%;
+}
+#footer-wrap {
+    background-color: white;
+}
+.fa-footer{
+    color: black !important;
+    margin: 1.5%;
+    margin-bottom: 3% !important;
+}
+.imgLogoFooter{
+    margin-left: 50%;
+    margin-top: -10%;
+    width: 123px !important;
+}
+.privacidadContainer{
+    padding-top: 22%;
+}
+.privacidadTitle{
+    background-color: #062846b2;
+    color: white;
+    border-radius: 8px;
+    padding-top: 10%;
+    padding-bottom: 10%;   
+}
+.tablePrivacidad{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#header-wrap {
+    background: #fff!important;
+}
+.containerTitleBanner{
+    margin-top: 2%;
+}
+.contactoSection{
+    background-color: #DDE2EA;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    color: #053C6D;
+}
+.carouselContainerKaab{
+    padding-top: 2%;
+}
+@media(max-width:991px){
+    .contactoSection{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .footerCapital{
+        margin-top: 5%;
+    }
+    .titleContactoBanner{
+        font-size: 25px;
+        margin-top: 20%;
+    }
+    .containerServiciosLanding{
+        margin-left: 12%;
+    }
+    .logoCapitalNavBar{
+        margin-bottom: 5%;
+        height: 6rem;
+    }
+    .serviciosTitleInicio{
+        margin-top: 55%;
+        padding-left: 3%;
+    }
+    .titleInicioTitle{
+        font-size: 1.5rem;
+    }
+    .titleInicioResponsive{
+        margin: 5%;
+    }
+    .capitalBanner{
+        height: 32rem;
+    
+    }
+    .containerLashesProducts{
+        margin-top: 50%;
+    }
+    .titleValueProp{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .cardAplicacionesLash{
+        margin-left: 8%;
+    }
+    .imgLogoFooter{
+        margin-left: 52% ;
+        width: 10rem !important;
+        margin-bottom: 15%;
+    }
+    .privacidadContainer{
+        padding-top: 72%;
+    }
+    .privacidadBanner{
+        height: 35rem;
+        
+    }
+    .titleCompletaTresCursos{
+        font-size: 18pt;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+}
+@media(max-width: 800px){
+    .imgLogoFooter{
+        margin-left: 69% ;
+    }
+}
+@media(min-width:360px) and (max-width: 400px){
+    .containerServiciosLanding{
+        margin-left: 8.5%;
+    }
+    .titleValueProp{
+        margin-top: -30%;
+    }
+    /* .capitalBanner{
+        height: 65rem;
+    
+    } */
+    .cardAplicacionesLash{
+        margin-left: 0%;
+    }
+    .privacidadContainer{
+        padding-top: 92%;
+    }
+
+}
+@media(max-width: 350px){
+    .containerServiciosLanding{
+        margin-left: 0%;
+    }
+    .imgLogoFooter{
+        margin-left: 40% ;
+    }
+
+}

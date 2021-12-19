@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="2dtfi3kofxydcglrs1ukucybyaxvii" />
+    <meta name="description"
+        content="Kaak Naab es un lugar único ,limpio ,privado , especial ,tranquilo y seguro, donde podrás disfrutar con tu familia o amigos de una playa virgen con paisajes únicos; donde se aceptan la diversidad de estilos de vida de la gente.">
+    {{!--
+    <meta name="keywords"
+        content="Estática, Sintética, Oberol, Antiestática, Pijama, Escafandra, Filipina, Bata, Zapatón, Zapato"> --}}
+    <title>Kaab Naab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a077a0470e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/logoCircle.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Nunito+Sans:wght@200&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <script>
+        function submitEmailForm(form) {
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4) {
+                    if (obj.status == 200) {
+                        var res = JSON.parse(obj.responseText);
+                        alert(res.message);
+                    }
+                    else {
+                        console.log("XMLHttp status " + obj.status + ": " + obj.statusText);
+                    }
+                }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.name.value, country: form.country.value, email: form.email.value, number: form.tel.value, checkbox: form.checkBox.value }));
+            alert("¡En breve te contactaremos!");
+            $(".formInput").val(" ");
+            return false;
+        }
+    </script>
+</head>
+
+<body class="fonts" data-spy="scroll" data-target="#lashistaItemLandingPage" data-offset="0">
+    {{!-- Header starts --}}
+    <div id="site-wrap" class="site">
+        <div id="header-wrap" style="width: 100%; z-index: 2" class="fixed-top">
+            <header id="header">
+                <div class="container paraFont">
+                    <nav id="navElement" class="navbar navbar-expand-lg navbar-dark">
+                        <a href="/">
+                            <img src="assets/images/kaabNaab.jpeg" alt="" class="logoCapitalNavBar"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/">Inicio<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/privacidad">Política de Privacidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#" target="_blank">
+                                        <span class="icon">
+                                            <i class="fa fa-facebook fa-footer"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#" target="_blank">
+                                        <span class="icon">
+                                            <i class="fa fa-instagram fa-footer"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=+525630220288"
+                                        target="_blank">
+                                        <span class="icon">
+                                            <i class="fab fa-whatsapp fa-footer"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <!-- #header-inner -->
+            </header>
+
+        </div>
+    </div>
+    {{!-- Header ends --}}
+    <div class="bodyPrincipal">
+        {{{body}}}
+    </div>
+    {{!-- FOOTER STARTS --}}
+    <div id="footer-wrap" class="is-clearfix paraFont" style="border-top: 1px solid #f3f3f3; padding: 60px 0 60px">
+        <footer id="footer" class="site-footer">
+            <div id="footer-inner" class="site-footer-inner container">
+                <div class="row">
+                    <div class="col-md-8" style="display: flex; flex-wrap: wrap">
+                        <div class="align-logo-footer" style="display: inline-block">
+                            <a href="/">
+                                <img src="assets/images/kaabNaab.jpeg" style="width: 207px; height: auto" alt=""
+                                    class="imgLogoFooter">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 right-footer">
+
+
+                        <a href="#" target="_blank">
+                            <span class="icon">
+                                <i class="fa fa-facebook fa-footer"></i>
+                            </span>
+                        </a>
+                        <a href="#" target="_blank">
+                            <span class="icon">
+                                <i class="fa fa-instagram fa-footer"></i>
+                            </span>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=+525630220288" target="_blank">
+                            <span class="icon">
+                                <i class="fab fa-whatsapp fa-footer"></i>
+                            </span>
+                        </a>
+
+                        <p><b><span style="color: #E9070D;">Kaab Naab</span></b> Todos los derechos reservados. Sus
+                            datos están protegidos por
+                            la ley de privacidad. <span><a href="/privacidad" style="color: #D45C6C;">Visita nuestra
+                                    política de privacidad</a></span></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #footer -->
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
