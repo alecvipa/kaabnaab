@@ -12,13 +12,13 @@
 }
 .bannerContacto{
     height: 20rem;
-    background-image: url("/assets/images/company.jpeg");
+    background-image: url("/assets/images/alberca10.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .titleContactoBannerOverlay{
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgba(0, 0, 0, 0.527);
     padding: 3%;
     height: 100%;
     width: 100%;
@@ -133,7 +133,7 @@
     margin-top: 2%;
 }
 .contactoSection{
-    background-color: #DDE2EA;
+    background-color: #E5E4D6;
     padding-top: 5%;
     padding-bottom: 5%;
     margin-top: 5%;
@@ -143,6 +143,12 @@
     padding-top: 2%;
 }
 @media(max-width:991px){
+    .groupList{
+        margin-top: 5%;
+    }
+    .titleContactoBanner2{
+        font-size: 17px;
+    }
     .contactoSection{
         padding-top: 10%;
         padding-bottom: 10%;
@@ -152,7 +158,7 @@
     }
     .titleContactoBanner{
         font-size: 25px;
-        margin-top: 20%;
+        margin-top: 12%;
     }
     .containerServiciosLanding{
         margin-left: 12%;
