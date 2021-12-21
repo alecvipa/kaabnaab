@@ -116,11 +116,7 @@
     padding-top: 22%;
 }
 .privacidadTitle{
-    background-color: #062846b2;
     color: white;
-    border-radius: 8px;
-    padding-top: 10%;
-    padding-bottom: 10%;   
 }
 .tablePrivacidad{
     margin-top: 5%;
@@ -143,6 +139,9 @@
     padding-top: 2%;
 }
 @media(max-width:991px){
+    .dondeDormiras{
+        margin-top: 5%;
+    }
     .groupList{
         margin-top: 5%;
     }

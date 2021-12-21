@@ -194,29 +194,6 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-6">
-                <hr>
-                <h3>¿Dónde dormirás?</h3>
-                <br>
-                <ul class="list-group">
-                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
-                        <h4>Dormitorio 1</h4>
-                        <p>1 cama matrimonial grande</p>
-                    </li>
-                    <li class="list-group-item"><i class="fas fa-bed"></i> <i class="fas fa-bed"></i> <br>
-                        <h4>Dormitorio 2</h4>
-                        <p>2 camas matrimoniales</p>
-                    </li>
-                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
-                        <h4>Dormitorio 3</h4>
-                        <p>1 cama matrimonial grande</p>
-                    </li>
-                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
-                        <h4>Dormitorio 4</h4>
-                        <p>1 cama matrimonial grande</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
                 <section class="formdiv googleSubTitulo">
                     <div class="formularioContacto container">
                         <div class="row">
@@ -228,41 +205,41 @@
                                             onsubmit="return submitEmailForm(this);" id="myForm">
                                             <section class="form-group">
                                                 <label for="name">Nombre Completo</label>
-                                                <input type="name" name="name" class="form-control" id="completeName"
-                                                    aria-describedby="namelHelp">
+                                                <input type="name" name="name" class="form-control formInput"
+                                                    id="completeName" aria-describedby="namelHelp" required>
                                             </section>
                                             <section class="form-group">
                                                 <label for="exampleInputEmail1">Correo Electrónico</label>
-                                                <input type="email" name="email" class="form-control" id="inputEmail1"
-                                                    aria-describedby="emailHelp">
+                                                <input type="email" name="email" class="form-control formInput"
+                                                    id="inputEmail1" aria-describedby="emailHelp" required>
                                                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos
                                                     tu correo
                                                     electrónico con
                                                     terceros.</small>
                                             </section>
                                             <section class="form-group">
-                                                <label for="number">Número de Celular</label>
-                                                <input type="text" name="tel" class="form-control" id="cellNumber"
-                                                    aria-describedby="numberHelp">
+                                                <label for="name">Número de contacto</label>
+                                                <input type="text" name="number" class="form-control formInput"
+                                                    id="completeName" aria-describedby="namelHelp" required>
                                             </section>
                                             <section>
                                                 <div class="form-group">
                                                     <!-- Date input -->
                                                     <label class="control-label" for="date">Día de llegada</label>
-                                                    <input class="form-control" id="date" name="date"
-                                                        placeholder="MM/DD/YYY" type="text" />
+                                                    <input class="form-control formInput" id="date" name="date"
+                                                        placeholder="MM/DD/YYY" type="text" required/>
                                                 </div>
                                             </section>
                                             <section>
                                                 <div class="form-group">
                                                     <!-- Date input -->
-                                                    <label class="control-label" for="date">Día de Salida</label>
-                                                    <input class="form-control" id="date" name="date"
-                                                        placeholder="MM/DD/YYY" type="text" />
+                                                    <label class="control-label" for="date">Número de noches</label>
+                                                    <input class="form-control formInput" id="secondate" name="secondate"
+                                                         type="text" required/>
                                                 </div>
                                             </section>
                                             <br>
-                                            <button type="submit"
+                                            <button
                                                 class="btn btn-warning btn-lg submitFormBtn pointer">Enviar</button>
                                             <br>
                                             <br>
@@ -287,6 +264,29 @@
                     </div>
 
                 </section>
+            </div>
+            <div class="col-md-6 dondeDormiras">
+                <hr>
+                <h3>¿Dónde dormirás?</h3>
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
+                        <h4>Dormitorio 1</h4>
+                        <p>1 cama matrimonial grande</p>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-bed"></i> <i class="fas fa-bed"></i> <br>
+                        <h4>Dormitorio 2</h4>
+                        <p>2 camas matrimoniales</p>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
+                        <h4>Dormitorio 3</h4>
+                        <p>1 cama matrimonial grande</p>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-bed"></i> <br>
+                        <h4>Dormitorio 4</h4>
+                        <p>1 cama matrimonial grande</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

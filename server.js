@@ -58,8 +58,8 @@ app.post("/ajax/email", function (request, response) {
         }
     });
 
-    var textBody = `FROM: ${request.body.name}; EMAIL: ${request.body.email}; MESSAGE: ${request.body.message}`;
-    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p>País de residencia: ${request.body.country} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Número de contacto:${request.body.number} </p><p>Checkbox: ${request.body.checkbox}</p>`;
+    
+    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p><p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Número de contacto:${request.body.number} </p><p>Día de llegada: ${request.body.date}</p><p>Número de días: ${request.body.secondate}</p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
         to: 'hebrit_626@hotmail.com',
