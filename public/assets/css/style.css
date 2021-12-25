@@ -138,7 +138,15 @@
 .carouselContainerKaab{
     padding-top: 2%;
 }
+@media(min-width:992px){
+    .carouselGallery{
+        display: none;
+    }
+}
 @media(max-width:991px){
+    .gallery{
+        display: none;
+    }
     .dondeDormiras{
         margin-top: 5%;
     }

@@ -7,7 +7,7 @@
                     <div class="serviciosTitleInicio text-center">
                         <div class="titleInicioResponsive">
                             <h1 class="titleInicioTitle">
-                                El lugar especial, privado y seguro para disfrutar con la mejor compañía.
+                                Un lugar especial, privado y seguro para disfrutar con la mejor compañía.
                             </h1>
                             <button type="button" class="btn btn-info btn-lg" onclick="location.href='#contacto';"
                                 style="color: white;">Reservar</button>
@@ -19,17 +19,59 @@
             </div>
         </div>
 
-    </div>
+    </div> <br>
     <div class="container text-center carouselContainerKaab">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4"></div>
+            <div class="">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h2 style="color: #488794; font-weight:bolder">Un santuario maravilloso <br> para descansar,
+                            despejarse
+                            & descubrir la
+                            naturaleza.</h2>
+                    </li>
+                    <li class="list-group-item">
+                        <h4 style="color: #d9160fab;">Es un espacio privado, solo para ti. Puedes hacer home office &
+                            trabajo de
+                            escuela, ya que contamos con internet satelital, con un costo adicional.</h4>
+                    </li>
+                </ul>
+
+                {{!-- <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <img src="/assets/images/kaabNaab.jpeg" class="img-fluid" alt="Responsive image">
                 </div>
-                <div class="col-md-4"></div>
-            </div>
+                <div class="col-md-4"></div> --}}
+            </div> <br> <br>
             <div class="row">
+                <!-- Gallery -->
+                <div class="row gallery">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="/assets/images/6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" />
+
+                        <img src="/assets/images/story3.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Wintry Mountain Landscape" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="/assets/images/story1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Mountains in the Clouds" />
+
+                        <img src="/assets/images/4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="/assets/images/5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                        <img src="/assets/images/story2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Yosemite National Park" />
+                    </div>
+                </div>
+                <!-- Gallery -->
+            </div>
+            <div class="row carouselGallery">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -79,7 +121,7 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h3 style="color: gray;"> <i class="fas fa-user-check"></i>
                         Fernanda.
                     </h3>
@@ -88,7 +130,7 @@
                     </h1>
                     <hr>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h3 style="color: gray;"> <i class="fas fa-user-check"></i>
                         Yara.
                     </h3>
@@ -96,10 +138,63 @@
                         El lugar nos encantó. El hotel fue completamente para nosotros.
                     </h1>
                     <hr>
+                    <button type="button" class="btn btn-info btn-lg" onclick="location.href='#contacto';"
+                        style="color: white;">Reservar</button>
+                </div>
+                <div class="col-md-4">
+                    <br> <br>
+                    <p>
+                        <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Ver reseñas...
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+
+                                    Yara
+                                    <hr>
+                                    <p class="text-secondary">Diciembre 2020</p>
+                                    <p>
+                                        El lugar nos encantó, el hotel fue completamente para nosotros. La playa estaba
+                                        vacía y en tiempos de Covid era justo lo que buscábamos. La cocina está muy bien
+                                        equipada. La alberca está bastante grande.
+                                    </p>
+
+                                </li>
+                                <li class="list-group-item">
+
+                                    Rebeca
+                                    <hr>
+                                    <p class="text-secondary">Agosto 2020</p>
+                                    <p>
+                                        Ruben en todo momento estuvo al pendiente de nosotros, siempre vio que
+                                        tuvieramos todo lo necesario y nos sorprendimos de lo equipada que esta la
+                                        cocina. Mi recomendacion es llevar mucho repelente pero de ahi en fuera la casa
+                                        esta comoda y la gente local muy amable.
+                                    </p>
+
+                                </li>
+                                <li class="list-group-item">
+
+                                    Fernanda
+                                    <hr>
+                                    <p class="text-secondary">Enero 2020</p>
+                                    <p>
+                                        El lugar es precioso, con una playa perfecta para ver el mar, caminar y meterse
+                                        a nadar. Los cuartos están muy cómodos y limpios. Las zonas comunes están bien
+                                        cuidadas. La atención de Mónica y Rubén hizo nuestra estancia muy placentera
+                                        (Ruben, además, es un gran cocinero). Recomiendo mucho este hospedaje.
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-info btn-lg" onclick="location.href='#contacto';"
-                style="color: white;">Reservar</button>
 
         </div>
 
@@ -150,8 +245,8 @@
                         casa</a>
                     <li class="list-group-item"><i class="fas fa-clock"></i> Llegada: 14:00 a 17:00</li>
                     <li class="list-group-item"><i class="fas fa-clock"></i> Salida: 12:00</li>
-                    <li class="list-group-item"><i class="fas fa-door-closed"></i> Llegada autónoma con personal del
-                        edificio</li>
+                    <li class="list-group-item"><i class="fas fa-door-closed"></i> Llegada autónoma con el personal del
+                        lugar</li>
                     <li class="list-group-item"><i class="fas fa-smoking-ban"></i> Prohibido fumar</li>
                     <li class="list-group-item"><i class="fas fa-democrat"></i> NO se admiten fiestas o eventos</li>
                     <li class="list-group-item"><i class="fas fa-paw"></i> Admite mascotas</li>
@@ -173,7 +268,8 @@
                     <li class="list-group-item"><i class="fas fa-exclamation-circle"></i>
                         No hay alarma de humos</li>
                     <li class="list-group-item"><i class="fas fa-exclamation-circle"></i>
-                        Piscina/jacuzzi sin valla ni puerta con cierre — “LA ALBERCA ESTA ELEVADA DEL PISO 40 CN, TIENE
+                        Piscina/jacuzzi sin valla ni puerta con cierre — “LA ALBERCA ESTA ELEVADA DEL PISO 40
+                        CENTÍMETROS, TIENE
                         UNA PROFUNDIDAD DE 1.60 M POR LO QUE REQUIERE LA SUPERVISION DE LOS ADULTOS AL ESTAR CON NIÑOS.
                         BAÑARSE ANTES DE METERSE.”</li>
                 </ul>
@@ -227,20 +323,19 @@
                                                     <!-- Date input -->
                                                     <label class="control-label" for="date">Día de llegada</label>
                                                     <input class="form-control formInput" id="date" name="date"
-                                                        placeholder="MM/DD/YYY" type="text" required/>
+                                                        placeholder="MM/DD/YYY" type="text" required />
                                                 </div>
                                             </section>
                                             <section>
                                                 <div class="form-group">
                                                     <!-- Date input -->
                                                     <label class="control-label" for="date">Número de noches</label>
-                                                    <input class="form-control formInput" id="secondate" name="secondate"
-                                                         type="text" required/>
+                                                    <input class="form-control formInput" id="secondate"
+                                                        name="secondate" type="text" required />
                                                 </div>
                                             </section>
                                             <br>
-                                            <button
-                                                class="btn btn-warning btn-lg submitFormBtn pointer">Enviar</button>
+                                            <button class="btn btn-warning btn-lg submitFormBtn pointer">Enviar</button>
                                             <br>
                                             <br>
                                             <section class="form-check">
@@ -271,7 +366,7 @@
                 <br>
                 <ul class="list-group">
                     <li class="list-group-item"><i class="fas fa-bed"></i> <br>
-                        <h4>6 Dormitorios</h4>
+                        <h4>6 habitaciones independientes</h4>
                         <p>Capacidad para 14 personas</p>
                     </li>
                 </ul>
