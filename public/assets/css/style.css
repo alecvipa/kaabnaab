@@ -1,13 +1,13 @@
 
 .capitalBanner{
     height: 50rem;
-    background-image: url("/assets/images/waves.jpg");
+    background-image: url("/assets/images/wellness3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed;
-    transition: 0s linear;
-    background-position: 25% 85%; */
+    transition: 0s linear; */
+    background-position: 25% 85%;
 
 }
 .bannerContacto{
@@ -19,14 +19,14 @@
 }
 .titleContactoBannerOverlay{
     background-color: rgba(0, 0, 0, 0.527);
-    padding: 3%;
+    padding: 1%;
     height: 100%;
     width: 100%;
 }
 .overlayInicio{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.219);
 }
 .serviciosTitleInicio{
     margin-top: 20%;
@@ -186,6 +186,8 @@
     }
     .capitalBanner{
         height: 32rem;
+        
+        background-position: 25% 85%;
     
     }
     .containerLashesProducts{
