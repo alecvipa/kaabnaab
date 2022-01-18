@@ -1,7 +1,7 @@
 
 .capitalBanner{
     height: 50rem;
-    background-image: url("/assets/images/wellness3.jpg");
+    background-image: url("/assets/images/wellness3.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
 }
 .privacidadBanner{
     height: 40rem;
-    background-image: url("/assets/images/privacidadImg.jpg");
+    background-image: url("/assets/images/privacidadImg.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
