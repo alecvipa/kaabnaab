@@ -21,7 +21,7 @@ app.use(express.static("public"));
 var PORT = process.env.PORT || 3000;
 
 // Set Handlebars as the default templating engine.
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Redirect to  https://www.akkaconsulting.com.mx
