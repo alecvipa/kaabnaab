@@ -21,11 +21,11 @@ app.use(express.static("public"));
 var PORT = process.env.PORT || 3000;
 
 // Set Handlebars as the default templating engine.
-app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Redirect to https://xyncs.com
-// const targetBaseUrl = 'https://www.kaak-naab.com/inicio';
+// Redirect to  https://www.akkaconsulting.com.mx
+// const targetBaseUrl = 'https://www.akkaconsulting.com.mx/inicio';
 
 
 
@@ -35,10 +35,19 @@ app.get('/', function (req, res) {
     res.render('inicio')
 
 });
-app.get('/:params?', function (req, res) {
-    var params = req.params.params;
-    res.render(params);
-})
+// app.get('/:params?', function (req, res) {
+//     var params = req.params.params;
+//     res.render(params);
+// })
+app.get('/inicio', function (req, res) {
+    res.render('inicio')
+});
+app.get('/privacidad', function (req, res) {
+    res.render('privacidad');
+});
+app.get('/gracias', function (req, res) {
+    res.render('gracias')
+});
 
 
 // Nodemailer route
