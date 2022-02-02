@@ -8,6 +8,29 @@ const email = process.env.email;
 const superSecretPwd = process.env.superSecretPwd;
 const tokenFb = process.env.tokenAccesoFB
 
+//API FB CODE
+// const bizSdk = require('facebook-nodejs-business-sdk');
+
+// const accessToken = 'EAADBHK9HAXYBAB7tJ0BBGHiZCybGKZBlfQoHIghuhZBmUeDcrdWEzzuHJOLorqs5mVuejKxAsbZCpOgAtDw3RINEHsYN2aVeyZBFSTsucAWvq0WUBqJL4YwJsKTR8RE37PCawE8ceLSytyMhzaiYNnK5gnqAKjZAN8VjhSqyLY5okIR8ZBUZBFOy';
+// const accountId = '1047063985845101';
+
+// const FacebookAdsApi = bizSdk.FacebookAdsApi.init(accessToken);
+// const AdAccount = bizSdk.AdAccount;
+// const Campaign = bizSdk.Campaign;
+
+// const account = new AdAccount(accountId);
+// var campaigns;
+
+// account.read([AdAccount.Fields.name])
+//     .then((account) => {
+//         return account.getCampaigns([Campaign.Fields.name], { limit: 10 }) // fields array and params
+//     })
+//     .then((result) => {
+//         campaigns = result
+//         campaigns.forEach((campaign) => console.log(campaign.name))
+//     }).catch(console.error);
+
+
 // Create an instance of the express app.
 var app = express();
 
@@ -67,7 +90,7 @@ app.post("/ajax/email", function (request, response) {
         }
     });
 
-    
+
     var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p><p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Número de contacto:${request.body.number} </p><p>Día de llegada: ${request.body.date}</p><p>Número de días: ${request.body.secondate}</p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
